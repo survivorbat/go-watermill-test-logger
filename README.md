@@ -17,7 +17,7 @@ import (
 )
 
 func TestWatermill(t *testing.T) {
-  // This Will fail the test if any error occur, and log to the test instance
+  // This Will fail the test if any error occurred, and log to the test instance
   logger := watertestlogger.NewTestAdaptor(t, true, watermill.LogLevelInfo)
 
   router, err := message.NewRouter(message.RouterConfig{}, logger)
