@@ -13,7 +13,7 @@ fmt: ## Format go code, tidy the go.mod file and run the linter
 
 tools: ## Install extra tools for development
 	go install mvdan.cc/gofumpt@latest
-	go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
+	@echo "Make sure to have golangci-lint v2 installed" # v2 is hard to install platform independently
 
 lint: ## Lint the code locally
 	golangci-lint run

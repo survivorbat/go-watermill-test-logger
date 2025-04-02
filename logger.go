@@ -92,6 +92,8 @@ func (t *TestLogAdaptor) Error(msg string, err error, fields watermill.LogFields
 }
 
 // With implements watermill.LoggerAdapter.
+//
+//nolint:ireturn // Can't be changed her, part of the interface
 func (t *TestLogAdaptor) With(fields watermill.LogFields) watermill.LoggerAdapter {
 	mergedFields := t.withFields
 	for key, field := range fields {
