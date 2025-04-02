@@ -14,6 +14,7 @@ package main
 import (
  "github.com/stretchr/testify/require"
  "github.com/ThreeDotsLabs/watermill/message"
+ "github.com/survivorbat/go-watermill-test-logger"
 )
 
 func TestWatermill(t *testing.T) {
